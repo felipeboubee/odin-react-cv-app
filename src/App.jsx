@@ -4,8 +4,8 @@ import Sidebar from './components/Sidebar.jsx'
 import PersonalDetails from './components/sections/PersonalDetails.jsx'
 import Section from './components/Section.jsx'
 import Education from './components/sections/Education.jsx'
-/* import Experience from './components/sections/Experience.jsx'
-import Display from './components/Display.jsx' */
+import Experience from './components/sections/Experience.jsx'
+/* import Display from './components/Display.jsx' */
 
 function App() {
   
@@ -17,6 +17,7 @@ function App() {
       address: "",
     },
     education: [],
+    experience: [],
   })
 
   function updateSection(sectionName, newData){
@@ -40,6 +41,12 @@ function App() {
       <Education
         data={cvData.education}
         onChange={(data) => updateSection("education", data)}
+      />
+    </Section>
+    <Section title="Experience">
+      <Experience
+        data={cvData.experience}
+        onChange={(data) => updateSection("experience", data)}
       />
     </Section>
   </div>
