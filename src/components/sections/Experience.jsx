@@ -62,7 +62,7 @@ export default function Experience({data, onChange}){
                         id="description"
                         value={entry.description}
                         placeholder="Responibilities and tasks"
-                        onChange={((v) => updateExperience(index, "description", v))}
+                        onChange={((v) => updateExperience(index, "description", v.target.value))}
                     />
                 </div>
             ))}

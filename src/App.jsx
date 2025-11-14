@@ -5,7 +5,7 @@ import PersonalDetails from './components/sections/PersonalDetails.jsx'
 import Section from './components/Section.jsx'
 import Education from './components/sections/Education.jsx'
 import Experience from './components/sections/Experience.jsx'
-/* import Display from './components/Display.jsx' */
+import Display from './components/Display.jsx' 
 
 function App() {
   
@@ -49,6 +49,8 @@ function App() {
         onChange={(data) => updateSection("experience", data)}
       />
     </Section>
+
+    <Display data={cvData}/>
   </div>
   )
 }
